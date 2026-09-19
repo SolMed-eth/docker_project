@@ -94,7 +94,7 @@ This command creates the required directories, builds the Docker images and star
 Useful commands:
 
 ```bash
-make build
+make
 make up
 make down
 make clean

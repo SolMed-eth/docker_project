@@ -145,9 +145,7 @@ deleted by `make fclean` / `make re`.
 
 ## 6. Changing credentials
 
-Passwords are read from `secrets/` only when the database and WordPress are
-initialised for the first time. To apply new passwords, edit the secret files
-and reset the stack:
+The startup scripts read passwords from secrets/ when the containers start. Database accounts and WordPress users are created during the initial installation. To apply new passwords through a fresh installation, update the secret files and reset the stack
 
 ```
 make fclean
